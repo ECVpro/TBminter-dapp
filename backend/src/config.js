@@ -7,18 +7,19 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "TBOldSchooltest";
-const description = "So old school!!!";
+const namePrefix = "STICKERtest";
+const description = "Love old school!!!";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 12,
+    growEditionSizeTo: 20,
     layersOrder: [
-      { name: "Guts" },
-      { name: "Rim" },
-      { name: "Font" },
+      { name: "BACKGROUND" },
+      { name: "DECK" },
+      { name: "COPING" },
+      { name: "GRAPHIC" },
     ],
   },
 ];
@@ -45,8 +46,8 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'TBOldSchooltest';
-const CONTRACT_SYMBOL = 'TB';
+const CONTRACT_NAME = 'STICKERtest';
+const CONTRACT_SYMBOL = 'SHIT(R)';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x97652b393712c2dF7f7a882eEE0854A5c8fa4448';
 const TREASURY_ADDRESS = '0x97652b393712c2dF7f7a882eEE0854A5c8fa4448';
@@ -55,7 +56,7 @@ const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATI
 const TOKENS_PER_MINT = 3; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-06-07T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-06-10T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -66,7 +67,7 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = ["0x97652b393712c2dF7f7a882eEE0854A5c8fa4448"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x70279470d7dd0E914Fbc1d009e217a25Ef44d83d"; // If you want to manually include it
+let CONTRACT_ADDRESS = "New Contracted Adress"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
@@ -91,7 +92,7 @@ try {
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://shitskateboardcompany.com",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
