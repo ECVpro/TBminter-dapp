@@ -45,6 +45,7 @@ const format = {
 
 const extraMetadata = {
   external_url: "https://shitskateboardcompany.com", // Replace with your website or remove this line if you do not have one.
+  royalty_owner: "Frode Goa", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
